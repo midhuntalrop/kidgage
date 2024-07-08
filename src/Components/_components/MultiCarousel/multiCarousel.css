@@ -1,0 +1,66 @@
+.glide__arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    z-index: 2;
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+    width: 350px;
+    height: 400px;
+    border-radius: 16px;
+    position: relative;
+    opacity: 0.5; /* default opacity */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin: 10px 10px; /* Add margin between cards */
+}
+
+.centered-slide {
+    opacity: 0.5; /* full opacity for centered slide */
+    /* transform: scale(1.1); slightly larger scale for emphasis */
+}
+.hi:hover {
+    transform: scale(1.04);
+    transition: transform 0.7s ease;
+  }
+  
+
+.overlay {
+    position: relative;
+}
+
+.carousel-container {
+    overflow: hidden;
+}
+
+.btn-more-info {
+    display: none;
+    margin-top: 10px;
+    background-color: #850b48;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-more-info:hover {
+    background-color: #ff004c;
+}
+
+.carousel-slide:hover .btn-more-info {
+    display: block;
+}
+
+.carousel-slide:hover {
+    opacity: 1;
+}

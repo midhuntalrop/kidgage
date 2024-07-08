@@ -1,0 +1,36 @@
+.carousel .control-dots .dot {
+    background-color: #ddd; /* Default dot color */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    opacity: 1;
+}
+
+.carousel .control-dots .dot.selected {
+    background-color: orange; /* Active dot color */
+}
+
+/* Custom styles for the carousel dots */
+.carousel .control-dots {
+    position: absolute;
+    bottom: 10%; /* Adjust this value to place the dots at the desired height */
+    left: 57%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.carousel .control-dots .dot {
+    background: #ccc; /* Default dot color */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background 0.3s;
+}
+
+.carousel .control-dots .dot.selected {
+    background: #ff7f00;
+    padding-right: 40px; /* Active dot color */
+}
