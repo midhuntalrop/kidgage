@@ -15,9 +15,9 @@ const FlightHotelDelas = () => {
                         Flight + Hotel Deals
                     </h1>
                 </div>
-                <div className="grid grid-cols-3 gap-11 max-980:grid-cols-2 max-980:gap-4 max-720:gap-2   max-599:grid-cols-1 max-599:gap-7 ">
+                <div className="grid grid-cols-3 gap-2 max-980:grid-cols-2 max-980:gap-4 max-720:gap-2   max-599:grid-cols-1 max-599:gap-7 ">
                     {array.map((item, index) => (
-                        <div className="card px-[15px] ">
+                        <div className="card px-[8px] mt-2">
                             <div className="w-[100%] rounded-lg shadow-lg shadow-slate-400">
                                 <div className="rounded-lg  ">
                                     <img

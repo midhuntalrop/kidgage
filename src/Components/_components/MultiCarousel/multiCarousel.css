@@ -72,7 +72,6 @@
     .carousel-slide {
         width: 80%; /* Adjust width for smaller screens */
         height: 300px; /* Adjust height for smaller screens */
-       
     }
 
     .carousel-container {
@@ -106,5 +105,10 @@
     .carousel-slide {
         width: 100%; /* Full width for screens between 300px and 410px */
         height: 250px;
+    }
+}
+@media (max-width: 790px) {
+    .hidden-in-790 {
+        display: none;
     }
 }
