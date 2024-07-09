@@ -95,17 +95,17 @@ const MultiCarousel = () => {
     return (
         <div className="w-full carousel-container my-20">
             <Container>
-                <div className="flex justify-between items-baseline">
+                <div className="flex justify-between items-baseline max-640:flex-wrap ">
                     <div className="container">
-                        <h1 className="font-light text-[36px] text-[#850B48]">
+                        <h1 className="font-light text-3xl lg:text-4xl text-[#850B48]">
                             Top Destination
                         </h1>
                     </div>
-                    <div className="top-0 right-0 flex justify-end items-center p-4">
+                    <div className="flex justify-end items-center p-4 space-x-2 ">
                         <button
                             id="slider-button-left"
                             onClick={handlePrevClick}
-                            className="group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full hover:bg-indigo-600 mx-1"
+                            className="group p-2 flex justify-center items-center border border-solid border-indigo-600 w-10 h-10 lg:w-12 lg:h-12 transition-all duration-500 rounded-full hover:bg-indigo-600"
                         >
                             <svg
                                 className="h-5 w-5 text-indigo-600 group-hover:text-white"
@@ -127,7 +127,7 @@ const MultiCarousel = () => {
                         <button
                             id="slider-button-right"
                             onClick={handleNextClick}
-                            className="group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full hover:bg-indigo-600 mx-1"
+                            className="group p-2 flex justify-center items-center border border-solid border-indigo-600 w-10 h-10 lg:w-12 lg:h-12 transition-all duration-500 rounded-full hover:bg-indigo-600"
                         >
                             <svg
                                 className="h-5 w-5 text-indigo-600 group-hover:text-white"
@@ -160,23 +160,24 @@ const MultiCarousel = () => {
                             }`}
                         >
                             <div
-                                className=" overflow-hidden rounded-2xl w-[350px] h-[350px] flex flex-col justify-end p-5 hi"
+                                className="overflow-hidden rounded-2xl  sm:w-64 h-64 sm:h-80 flex flex-col justify-end p-5 "
                                 style={{
                                     backgroundImage: `url(${slide.img})`,
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
                                 }}
                             >
-
-                                <div className="text-white p-4 rounded-b-2xl items-end">
-                                    <p className="text-4xl font-light">
+                                <div className="text-white p-4 rounded-b-2xl items-end bg-gradient-to-t from-black">
+                                    <p className="text-xl sm:text-2xl font-light">
                                         {slide.country}
                                     </p>
-                                    <p className="text-base font-medium">
+                                    <p className="text-sm sm:text-base font-medium">
                                         {slide.offer}
                                     </p>
-                                    <p className="text-[26px]">{slide.price}</p>
-                                    <button className="btn-more-info">
+                                    <p className="text-lg sm:text-xl">
+                                        {slide.price}
+                                    </p>
+                                    <button className="btn-more-info mt-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
                                         Book Now
                                     </button>
                                 </div>
@@ -186,10 +187,11 @@ const MultiCarousel = () => {
                 )}
             </div>
             <Container>
-                <div className="text-center grid-cols-2">
+                <div className="text-center mt-8">
                     <Button
                         sx={{
-                            width: "20%",
+                            width: "100%",
+                            maxWidth: "200px",
                             border: "2px solid  #E66625",
                             backgroundColor: "white",
                             borderRadius: "6px",

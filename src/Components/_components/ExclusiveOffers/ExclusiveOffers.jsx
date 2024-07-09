@@ -10,14 +10,10 @@ const CustomArrow = ({ onClick, direction }) => {
         <button
             type="button"
             onClick={onClick}
-            style={
-                direction !== "prev"
-                    ? { top: "87%", right: "50%" }
-                    : { top: "87%", left: "42%" }
-            }
-            className={`absolute top-1/2 transform -translate-y-1/2 z-10 bg-white text-black rounded-full p-2 shadow-md hover:bg-gray-200 ${
+            className={`absolute top-[87%] transform -translate-y-1/2 z-10 bg-white text-black rounded-full p-2 shadow-md max-1080:hidden hover:bg-gray-200 ${
                 direction === "prev" ? "left-4" : "right-4"
             }`}
+            style={direction !== "prev" ? { right: "50%" } : { left: "42%" }}
         >
             {direction === "prev" ? (
                 <svg
@@ -58,10 +54,10 @@ const ExclusiveOffers = () => {
     return (
         <div>
             <Container className="pt-10">
-                <div className="w-[100%] relative">
+                <div className="w-full relative">
                     {" "}
                     {/* Ensure relative positioning */}
-                    <h1 className="mt-10 font-light text-[36px] text-[#850B48]">
+                    <h1 className="mt-10 font-light text-2xl md:text-4xl text-[#850B48]">
                         Exclusive Offers
                     </h1>
                     <Carousel
@@ -90,23 +86,23 @@ const ExclusiveOffers = () => {
                             )
                         }
                     >
-                        <div className="my-10 rounded-md shadow-sm">
-                            <div className="grid grid-cols-2  w-[100%]">
-                                <div className="">
+                        <div className="my-10 rounded-md shadow-sm max-768:rounded-t-md">
+                            <div className="grid grid-cols-1 md:grid-cols-2 w-full max-768:rounded-t-lg">
+                                <div>
                                     <img
-                                        className="w-[100%] h-[100%] rounded-l-md"
+                                        className="w-full h-full rounded-l-md max-768:rounded-t-lg max-768:rounded-l-none "
                                         src="https://i.postimg.cc/0rR3nDwQ/download-1.webp"
                                         alt=""
                                     />
                                 </div>
                                 <div
-                                    className="text-start p-[45px]  rounded-r-lg"
+                                    className="text-start p-4 md:p-10 rounded-r-lg max-768:rounded-r-none max-768:rounded-b-lg"
                                     style={{ border: "1px solid #DEDEDE" }}
                                 >
-                                    <p className="text-[38px] font-light mt-6">
+                                    <p className="text-xl md:text-2xl lg:text-3xl font-light mt-6">
                                         Explore Saudi this summer
                                     </p>
-                                    <p className=" text-base mt-6">
+                                    <p className="text-sm md:text-base mt-6">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Voluptate illo tempora
                                         adipisci inventore reprehenderit error
@@ -122,6 +118,16 @@ const ExclusiveOffers = () => {
                                                 borderRadius: "6px",
                                                 color: "white",
                                                 textTransform: "none",
+                                                fontSize: {
+                                                    xs: "12px", // Small size for extra small screens
+                                                    sm: "14px", // Medium size for small screens
+                                                    md: "16px", // Larger size for medium screens
+                                                },
+                                                padding: {
+                                                    xs: "6px 12px", // Small padding for extra small screens
+                                                    sm: "8px 16px", // Medium padding for small screens
+                                                    md: "10px 20px", // Larger padding for medium screens
+                                                },
                                                 "&:hover": {
                                                     backgroundColor:
                                                         "darkorange",
@@ -135,23 +141,23 @@ const ExclusiveOffers = () => {
                             </div>
                         </div>
 
-                        <div className="my-10 rounded-md shadow-sm">
-                            <div className="grid grid-cols-2  w-[100%]">
-                                <div className="">
+                        <div className="my-10 rounded-md shadow-sm max-768:rounded-b-md max-768:rounded-none">
+                            <div className="grid grid-cols-1 md:grid-cols-2 w-full">
+                                <div>
                                     <img
-                                        className="w-[100%] h-[100%] rounded-l-md"
+                                        className="w-full h-full rounded-l-md max-768:rounded-b-md max-768:rounded-l-none"
                                         src="https://i.postimg.cc/50rDHZ98/download-3.webp"
                                         alt=""
                                     />
                                 </div>
                                 <div
-                                    className="text-start p-[45px] rounded-r-lg"
+                                    className="text-start p-4 md:p-10 rounded-r-lg max-768:rounded-r-none "
                                     style={{ border: "1px solid #DEDEDE" }}
                                 >
-                                    <p className="text-[38px] font-light mt-6">
+                                    <p className="text-xl md:text-2xl lg:text-3xl font-light mt-6">
                                         Explore Saudi this summer
                                     </p>
-                                    <p className=" text-base mt-6">
+                                    <p className="text-sm md:text-base mt-6">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Voluptate illo tempora
                                         adipisci inventore reprehenderit error
@@ -167,6 +173,16 @@ const ExclusiveOffers = () => {
                                                 borderRadius: "6px",
                                                 color: "white",
                                                 textTransform: "none",
+                                                fontSize: {
+                                                    xs: "12px", // Small size for extra small screens
+                                                    sm: "14px", // Medium size for small screens
+                                                    md: "16px", // Larger size for medium screens
+                                                },
+                                                padding: {
+                                                    xs: "6px 12px", // Small padding for extra small screens
+                                                    sm: "8px 16px", // Medium padding for small screens
+                                                    md: "10px 20px", // Larger padding for medium screens
+                                                },
                                                 "&:hover": {
                                                     backgroundColor:
                                                         "darkorange",
@@ -181,22 +197,22 @@ const ExclusiveOffers = () => {
                         </div>
 
                         <div className="my-10 rounded-md shadow-sm">
-                            <div className="grid grid-cols-2  w-[100%]">
-                                <div className="">
+                            <div className="grid grid-cols-1 md:grid-cols-2 w-full">
+                                <div>
                                     <img
-                                        className="w-[100%] h-[100%] rounded-l-md"
+                                        className="w-full h-full rounded-l-md"
                                         src="https://i.postimg.cc/L5ZwjNhw/download-2.webp"
                                         alt=""
                                     />
                                 </div>
                                 <div
-                                    className="text-start p-[45px] rounded-r-lg"
+                                    className="text-start p-4 md:p-10 rounded-r-lg"
                                     style={{ border: "1px solid #DEDEDE" }}
                                 >
-                                    <p className="text-[38px] font-light mt-6">
+                                    <p className="text-xl md:text-2xl lg:text-3xl font-light mt-6">
                                         Explore Saudi this summer
                                     </p>
-                                    <p className=" text-base mt-6">
+                                    <p className="text-sm md:text-base mt-6">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Voluptate illo tempora
                                         adipisci inventore reprehenderit error
@@ -212,6 +228,16 @@ const ExclusiveOffers = () => {
                                                 borderRadius: "6px",
                                                 color: "white",
                                                 textTransform: "none",
+                                                fontSize: {
+                                                    xs: "12px", // Small size for extra small screens
+                                                    sm: "14px", // Medium size for small screens
+                                                    md: "16px", // Larger size for medium screens
+                                                },
+                                                padding: {
+                                                    xs: "6px 12px", // Small padding for extra small screens
+                                                    sm: "8px 16px", // Medium padding for small screens
+                                                    md: "10px 20px", // Larger padding for medium screens
+                                                },
                                                 "&:hover": {
                                                     backgroundColor:
                                                         "darkorange",

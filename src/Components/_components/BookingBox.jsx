@@ -12,16 +12,16 @@ const BookingBox = () => {
                     <div className=" bg-white relative mt-[-30px] rounded-lg">
                         <div className="flex bg-orange-500 rounded-t-lg ">
                             <div className="p-3 bg-white rounded-ss-lg ">
-                                <p className="text-black text-base bg-white">
+                                <p className="text-black text-base bg-white  max-720:text-sm">
                                     Flight + Hotel
                                 </p>
                             </div>
-                            <div className="ml-2 text-base text-white p-3">
+                            <div className="ml-2 text-base text-white p-3 max-720:text-sm">
                                 <p>Hayya & Visa on arrival</p>
                             </div>
                         </div>
                     </div>
-                    <div className="grid grid-cols-4  p-4 gap-3">
+                    <div className="grid grid-cols-4  p-4 gap-3 max-840:grid-cols-2 max-599:grid-cols-1">
                         <div
                             className="rounded "
                             style={{ border: "1px solid #C1C1C1" }}
@@ -49,10 +49,12 @@ const BookingBox = () => {
                             label={"Room,Guest & Flight Class"}
                         />
                     </div>
-                    <div className="gap-4 flex justify-between px-5 ">
+                    <div className="gap-4 flex justify-between px-5 max-420:flex-wrap">
                         <div className="flex items-center mb-5">
                             <input type="checkbox" className="mt-[3px]" />
-                            <p>Book a hotel only part of my trip</p>
+                            <p className="max-720:text-sm max-640:ml-2 mt-[2px]">
+                                Book a hotel only part of my trip
+                            </p>
                         </div>
                         <div className="mb-5">
                             <Button
@@ -67,7 +69,7 @@ const BookingBox = () => {
                                     },
                                 }}
                             >
-                                Search
+                                <p className="px-4 max-720:text-sm">Search</p>
                             </Button>
                         </div>
                     </div>

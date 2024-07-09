@@ -21,7 +21,7 @@ const Footer = () => {
             }}
         >
             <Container>
-                <div className=" grid grid-cols-3 text-white px-[30px] pt-[45px] gap-11">
+                <div className=" grid grid-cols-3 text-white px-[30px] pt-[45px] gap-11 max-768:grid-cols-2 max-420:grid-cols-1 ">
                     <div>
                         <p className="text-xl font-medium mb-5">
                             Qatar Airways Holidays
@@ -72,7 +72,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr className="bg-white h-[1px] mt-10" />
-                <div className="px-[15px] flex justify-between">
+                <div className="px-[15px] flex justify-between max-768:flex-wrap pb-10">
                     <div className="flex gap-3 items-center">
                         <div className="w-[120px] py-4 ">
                             <img
@@ -86,7 +86,7 @@ const Footer = () => {
                             <p className="text-[28px] text-white">HOLIDAYS</p>
                         </div>
                     </div>
-                    <div className="flex items-center gap-8">
+                    <div className="flex items-center gap-8 ">
                         <div>
                             <p className="text-white text-sm ">Lets Connect</p>
                         </div>

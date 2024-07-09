@@ -32,5 +32,53 @@
 
 .carousel .control-dots .dot.selected {
     background: #ff7f00;
-    padding-right: 40px; /* Active dot color */
+    padding-right: 30px; /* Active dot color */
+    border-radius: 3px;
+    height: auto;
+}
+@media (max-width: 750px) {
+    .carousel .control-dots {
+        position: absolute;
+        bottom: 8%; /* Adjust this value to place the dots at the desired height */
+        left: 30%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 570px) {
+    .carousel .control-dots {
+        position: absolute;
+        bottom: 9%; /* Adjust this value to place the dots at the desired height */
+        left: 40%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 450px) {
+    .carousel .control-dots {
+        position: absolute;
+        bottom: 9%; /* Adjust this value to place the dots at the desired height */
+        left: 40%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+    .carousel .control-dots .dot.selected{
+        padding-right: 30px;
+    }
+}
+@media (max-width: 400px) {
+    .carousel .control-dots {
+        position: absolute;
+        bottom: 9%; /* Adjust this value to place the dots at the desired height */
+        left: 60%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+    .carousel .control-dots .dot.selected{
+        padding-right: 30px;
+    }
 }

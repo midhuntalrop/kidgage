@@ -8,14 +8,14 @@ const Cursole = () => {
     return (
         <div>
             <div>
-                <div className="bg-[url('https://i.postimg.cc/GtD9FpWT/download.webp')] bg-no-repeat bg-center bg-cover h-[65vh] w-full ">
-                    <div className="grid grid-cols-4"></div>
-                    <Container>
-                        <div className="grid grid-cols-2 h-[100%]]  align-middle mt-32">
+                <div className="bg-[url('https://i.postimg.cc/GtD9FpWT/download.webp')] bg-no-repeat bg-center bg-cover h-[65vh] w-full max-720:bg-conatin ">
+                    <div className="grid grid-cols-4 max-720:grid-cols-2 max-640:grid-cols-1 "></div>
+                    <Container className="max-720:mt-[-30px]">
+                        <div className="grid grid-cols-2 h-[100%]]  align-middle mt-32 max-720:grid-cols-1">
                             <div className=" max-w-[460px] ">
                                 <span className="">
                                     {" "}
-                                    <p className="text-[42px] text-white">
+                                    <p className="text-[42px] text-white max-768:text-3xl ">
                                         Lowest package price guaranteed -{" "}
                                         <span> July</span>
                                     </p>
@@ -23,7 +23,7 @@ const Cursole = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className="">
+                        <div className="mt-4">
                             {" "}
                             <Button
                                 sx={{
@@ -37,7 +37,7 @@ const Cursole = () => {
                                     },
                                 }}
                             >
-                                <p>Book by 31 June</p>
+                                <p className="text-sm">Book by 31 June</p>
                             </Button>
                         </div>
                     </Container>

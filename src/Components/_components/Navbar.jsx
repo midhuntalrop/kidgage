@@ -128,15 +128,20 @@ const Navbar = () => {
                         ))}
                     </Menu>
                 </Box>
-                <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+                <div className="w-[120px] max-720:w-[150px] max-720:ml-[-10px]">
+                    <img
+                        src="https://i.postimg.cc/pXVtQ4Qs/KIDGAGE-Logo-01.jpg"
+                        alt=""
+                    />
+                </div>
                 <Container className="bg-white">
                     <div className="flex justify-center align-middle items-center gap-8">
-                        <div className="w-[120px] ">
+                        {/* <div className="w-[120px] max-980:hidden">
                             <img
                                 src="https://i.postimg.cc/pXVtQ4Qs/KIDGAGE-Logo-01.jpg"
                                 alt=""
                             />
-                        </div>
+                        </div> */}
                         <div className=" ">
                             <Box
                                 sx={{
