@@ -144,10 +144,10 @@ const MultiCarousel = () => {
     };
 
     return (
-        <div className="w-full carousel-container my-20">
+        <div className="w-full carousel-container mb-20">
             <Container>
                 <div className="flex justify-between items-center">
-                    <h1 className="font-light text-3xl lg:text-4xl text-[#850B48] my-10">
+                    <h1 className="font-light text-3xl lg:text-4xl text-[#850B48] my-10 max-599:my-5">
                         Top Destination
                     </h1>
                 </div>
