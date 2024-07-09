@@ -141,17 +141,17 @@ const ExclusiveOffers = () => {
                             </div>
                         </div>
 
-                        <div className="my-10 rounded-md shadow-sm max-768:rounded-b-md max-768:rounded-none">
-                            <div className="grid grid-cols-1 md:grid-cols-2 w-full">
+                        <div className="my-10 rounded-md shadow-sm max-768:rounded-t-md">
+                            <div className="grid grid-cols-1 md:grid-cols-2 w-full max-768:rounded-t-lg">
                                 <div>
                                     <img
-                                        className="w-full h-full rounded-l-md max-768:rounded-b-md max-768:rounded-l-none"
+                                        className="w-full h-full rounded-l-md max-768:rounded-t-lg max-768:rounded-l-none"
                                         src="https://i.postimg.cc/50rDHZ98/download-3.webp"
                                         alt=""
                                     />
                                 </div>
                                 <div
-                                    className="text-start p-4 md:p-10 rounded-r-lg max-768:rounded-r-none "
+                                    className="text-start p-4 md:p-10 rounded-r-lg max-768:rounded-r-none max-768:rounded-b-lg "
                                     style={{ border: "1px solid #DEDEDE" }}
                                 >
                                     <p className="text-xl md:text-2xl lg:text-3xl font-light mt-6">
@@ -196,17 +196,17 @@ const ExclusiveOffers = () => {
                             </div>
                         </div>
 
-                        <div className="my-10 rounded-md shadow-sm">
-                            <div className="grid grid-cols-1 md:grid-cols-2 w-full">
+                        <div className="my-10 rounded-md shadow-sm max-768:rounded-t-md">
+                            <div className="grid grid-cols-1 md:grid-cols-2 w-full max-768:rounded-t-lg">
                                 <div>
                                     <img
-                                        className="w-full h-full rounded-l-md"
+                                        className="w-full h-full rounded-l-md max-768:rounded-t-lg max-768:rounded-l-none"
                                         src="https://i.postimg.cc/L5ZwjNhw/download-2.webp"
                                         alt=""
                                     />
                                 </div>
                                 <div
-                                    className="text-start p-4 md:p-10 rounded-r-lg"
+                                    className="text-start p-4 md:p-10 rounded-r-lg max-768:rounded-r-none max-768:rounded-b-lg"
                                     style={{ border: "1px solid #DEDEDE" }}
                                 >
                                     <p className="text-xl md:text-2xl lg:text-3xl font-light mt-6">

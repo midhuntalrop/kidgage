@@ -79,7 +79,7 @@ const PrevArrow = (props) => {
     );
 };
 
-const MultiCarousel = () => {
+const TopDestinations = () => {
     const slides = [
         {
             img: "https://i.postimg.cc/9fDnmjz5/pexels-photo-13789557.jpg",
@@ -206,4 +206,4 @@ const MultiCarousel = () => {
     );
 };
 
-export default MultiCarousel;
+export default TopDestinations;
