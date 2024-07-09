@@ -156,7 +156,7 @@ const TopDestinations = () => {
                 {slides.map((slide, index) => (
                     <div key={index} className="p-5">
                         <div
-                            className="h-[416px] w-[100%] flex flex-col justify-end opacity-80 hover:opacity-100 rounded-xl relative group"
+                            className="h-[416px] w-[100%] flex flex-col justify-end opacity-90 hover:opacity-100 rounded-xl relative group"
                             style={{
                                 backgroundImage: `url(${slide.img})`,
                                 backgroundSize: "cover",
